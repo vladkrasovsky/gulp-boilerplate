@@ -1,0 +1,60 @@
+{
+  "name": "gulp-boilerplate",
+  "version": "1.0.0",
+  "description": "Gulp boilerplate for Javascript ES6 compiling, plus SCSS, images, and fonts handling",
+  "author": "Vlad Krasovsky <info@vladkraovsky.com> (http://vladkrasovsky.com)",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vladkrasovsky/gulp-boilerplate.git"
+  },
+  "keywords": [
+    "gulp",
+    "e6",
+    "scss"
+  ],
+  "homepage": "https://github.com/vladkrasovsky/gulp-boilerplate#readme",
+  "dependencies": {
+    "jquery": "^3.3.1",
+    "normalize.css": "^7.0.0"
+  },
+  "devDependencies": {
+    "babel-core": "^6.26.0",
+    "babel-preset-env": "^1.6.1",
+    "babelify": "^8.0.0",
+    "browser-sync": "^2.23.6",
+    "browserify": "^16.0.0",
+    "browserify-shim": "^3.8.14",
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^4.1.0",
+    "gulp-concat": "^2.6.1",
+    "gulp-if": "^2.0.2",
+    "gulp-notify": "^3.2.0",
+    "gulp-options": "^1.1.1",
+    "gulp-plumber": "^1.2.0",
+    "gulp-rename": "^1.2.2",
+    "gulp-sass": "^3.1.0",
+    "gulp-sourcemaps": "^2.6.4",
+    "gulp-strip-debug": "^2.0.0",
+    "gulp-uglify": "^3.0.0",
+    "gulp-uglifycss": "^1.0.9",
+    "vinyl-buffer": "^1.0.1",
+    "vinyl-source-stream": "^2.0.0"
+  },
+  "babel": {
+    "presets": [
+      "env"
+    ]
+  },
+  "browserify": {
+    "transform": [
+      "browserify-shim"
+    ]
+  },
+  "browser": {
+    "jquery": "./node_modules/jquery/dist/jquery.js"
+  },
+  "browserify-shim": {
+    "jquery": "$"
+  },
+  "license": "MIT"
+}
